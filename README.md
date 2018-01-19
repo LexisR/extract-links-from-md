@@ -12,8 +12,10 @@ recibe un string y devuelve un arreglo de objetos como se muestra en el este
 ejemplo:
 
 ```js
+
 const extractLinksFromMd = require('extract-links-from-md');
 const str = `# Lorem ipsum
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
@@ -35,4 +37,6 @@ console.log(links);
 //   { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
 //   { href: 'http://foo.com', text: 'foo' },
 // ]
-```
+
+
+
