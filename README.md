@@ -1,38 +1,28 @@
-# extractLinksFromMd
+# libraryToFindLinks
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
 
-***
+### El reto
 
-Implementar un módulo de Node.js que reciba un string (en formato Markdown) y
-extraiga todos los links encontrados. La implementación debe ser una función que
-recibe un string y devuelve un arreglo de objetos como se muestra en el este
-ejemplo:
+Implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
 
-```js
-const extractLinksFromMd = require('extract-links-from-md');
-const str = `# Lorem ipsum
+### Metodologia de trabajo 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
-[dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+Metodología Agile Scrum
+Para seguir la planificación y ser eficientes en los ambientes de desarrollo, calidad y produción en producción.
 
-[foo](http://foo.com)
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.`;
+### Herramientas de trabajo
 
-const links = extractLinksFromMd(str);
 
-console.log(links);
-// [
-//   { href: 'https://en.wiktionary.org/wiki/labore', text: 'labore' },
-//   { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
-//   { href: 'http://foo.com', text: 'foo' },
-// ]
-```
+Trello: Donde se plasmnan las tareas y  desiciones tomadas como equipo y las tareas necesarias para llevar a cabo el proyecto.
+
+Slack:  
+Herramienta de comunicación técnica Slack, para que el trabajo remoto no marcara una distancia entre cada una de las integrantes del equipo manteniendose así la planificación, producción y calidad propuestas.
+
+### Casos de uso 
+
+Crear una librería que permita a las páginas de las univesidades extrar los links de la fuente o cita de esa información rapidamente.
+
+### Nuestro Avance Actual
+
+* Nos encontramos en proceso de creacion del Modulo de nodepara implementar un módulo de Node.
