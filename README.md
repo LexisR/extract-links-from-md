@@ -1,18 +1,6 @@
 # libraryToFindLinks
 
-
-### El reto
-
-Implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
-
-### Metodologia de trabajo 
-
-Metodología Agile Scrum
-Para seguir la planificación y ser eficientes en los ambientes de desarrollo, calidad y produción en producción.
-
-
 ### Herramientas de trabajo
-
 
 Trello: Donde se plasmnan las tareas y  desiciones tomadas como equipo y las tareas necesarias para llevar a cabo el proyecto.
 
@@ -25,4 +13,8 @@ Crear una librería que permita a las páginas de las univesidades extrar los li
 
 ### Nuestro Avance Actual
 
-* Nos encontramos en proceso de creacion del Modulo de nodepara implementar un módulo de Node.
+* Nos encontramos en proceso de creacion del Modulo de node para implementar un módulo de Node.
+
+
+
+
