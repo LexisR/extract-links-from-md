@@ -1,18 +1,17 @@
-var fs = require('fs');
+const fs = require('fs');
 
 fs.readFile('markdown.md', 'utf8', function (err, contents) {
-    var file = contents;
-    // console.log(file);
-
-    var newRegex = /\(.*?\)/g;
-    var myArray;
-    while ((myArray = newRegex.exec(file)) !== null) { 
-        var msg = myArray[0];
-        var subString = msg.substring(1, msg.length - 1);
-        //console.log(subString);
-        var newArray = [];
-        newArray.push(subString);
-        console.log(newArray);
+  const file = contents;
+  // console.log(file);
+  const newRegex = /\(.*?\)/g;
+  let myArray;
+  while ((myArray = newRegex.exec(file)) !== null) { 
+    let msg = myArray[0];
+    let subString = msg.substring(1, msg.length - 1);
+    console.log(subString);
+   //const newArray = [];
+   //newArray.push(subString);
+   //console.log(newArray);
     }
 });
 module.exports.fs = fs;
