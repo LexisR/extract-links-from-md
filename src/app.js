@@ -9,10 +9,10 @@ fs.readFile('markdown.md', 'utf8', function (err, contents) {
     while ((myArray = newRegex.exec(file)) !== null) { 
         var msg = myArray[0];
         var subString = msg.substring(1, msg.length - 1);
-        //console.log(subString);
-        var newArray = [];
-        newArray.push(subString);
-        console.log(newArray);
+        console.log(subString);
+        // var newArray = [];
+        // newArray.push(subString);
+        //console.log(newArray);
     }
 });
 module.exports.fs = fs;
