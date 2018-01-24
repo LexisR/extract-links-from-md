@@ -12,15 +12,19 @@ fs.readFile('markdown.md', 'utf8', function (err, contents) {
   let myArray;
 
   while ((myArray = newRegex.exec(file)) !== null) {
-    var msg = myArray[0];
-    // var subString = msg.substring(1, msg.length - 1);
-    // console.log(subString);
+    let msg = myArray[0];
+    let lastText = ']'.charCodeAt(0);
+    let subStringText = msg.substring(1, msg.length - 1);
+    let subStringLink = msg.substring(1, subStringText + 2);
+  
+    console.log(lastText);
+    
 
     // collection[0] = {
     //   href: JSON.stringify(subString)
 
     // }
-    console.log(msg.split(' '));
+    // console.log(msg.split(' '));
   }
 
 });
