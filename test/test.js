@@ -13,11 +13,14 @@ culpa qui officia deserunt mollit anim id est laborum.` //string con template li
 
 describe("extractLinksFromMd()", function(){
   it("It should return an array with three objects", function(){
-    const results = app.extractLinksFromMd({paragraph});//{paragrap:paragraph}es5
+    const results = app.extractLinksFromMd(paragraph);//{paragrap:paragraph}es5
     expect(results).to.deep.equal( [
       { href: 'https://en.wiktionary.org/wiki/labore', text: 'labore' },
       { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
       { href: 'http://foo.com', text: 'foo' },
    ]);
   });
+  
 });
+
+//hacer una prueba que no pasen links sin y que no pasen solo wwww
