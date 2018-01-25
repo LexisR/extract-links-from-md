@@ -1,20 +1,35 @@
 # libraryToFindLinks
 
-### Herramientas de trabajo
+Evelexis is a library that facilitates the extraction of links from a paragraph, to facilitate the search of links of any web page.
 
-Trello: Donde se plasmnan las tareas y  desiciones tomadas como equipo y las tareas necesarias para llevar a cabo el proyecto.
+### Features
 
-Slack:  
-Herramienta de comunicación técnica Slack, para que el trabajo remoto no marcara una distancia entre cada una de las integrantes del equipo manteniendose así la planificación, producción y calidad propuestas.
+[]Free of dependency
+[]Extract likns from any website
 
-### Casos de uso 
+### Documentation 
 
-Crear una librería que permita a las páginas de las univesidades extrar los links de la fuente o cita de esa información rapidamente.
+in progress...
 
-### Nuestro Avance Actual
+### Case of use 
 
-* Nos encontramos en proceso de creacion del Modulo de node para implementar un módulo de Node.
+Create a library that allows the pages of the universities to extract the links from the source or quote of that information quickly.
 
+### Basic Usage
+
+import evelexis from 'src';
+
+### Development
+
+$ npm install evelexis
+$ npm test
+
+### Development environment 
+ES6
+Node.js
+Pre-commit tests
+Mocha
+Chai
 
 
 
