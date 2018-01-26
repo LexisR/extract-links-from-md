@@ -1,5 +1,5 @@
-const a = require('./app.js');
-const b = `# Lorem ipsum
+const app = require('./app.js');
+const text = `# Lorem ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
 [dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
@@ -9,4 +9,4 @@ consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.`;
-a.extractLinksFromMd(b);
+app.extractLinksFromMd(text);

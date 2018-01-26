@@ -1,5 +1,5 @@
-var expect = require("chai").expect;// investigar
-var app = require("../src/app.js");
+let expect = require("chai").expect;// investigar
+let app = require("../src/app.js");
 const paragraph = `# Lorem ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
@@ -11,16 +11,14 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.` //string con template literal permite espacio
 
-describe("extractLinksFromMd()", function(){
-  it("It should return an array with three objects", function(){
+describe("extractLinksFromMd()", function () {
+  it("It should return an array with three objects", function () {
     const results = app.extractLinksFromMd(paragraph);//{paragrap:paragraph}es5
-    expect(results).to.deep.equal( [
+    expect(results).to.deep.equal([
       { href: 'https://en.wiktionary.org/wiki/labore', text: 'labore' },
       { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
       { href: 'http://foo.com', text: 'foo' },
-   ]);
+    ]);
   });
-  
-});
 
-//hacer una prueba que no pasen links sin y que no pasen solo wwww
+});

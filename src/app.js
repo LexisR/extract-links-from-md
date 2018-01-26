@@ -1,45 +1,5 @@
-
-// const fs = require('fs');
-// let collection = [];
-
-//  fs.readFile('markdown.md', 'utf8', function (err, contents) {
-
-//   var file = contents;
-//   const newRegex = /(\[(.*?)\]\()(.+?)(\))/g;
-//   let myArray;
-//   let linkArray = [];
-//   while ((myArray = newRegex.exec(file)) !== null) {
-//     let textLink = myArray[2];
-//     let linkUrl = myArray[3];
-//     var link2 = new LinksFromMd(linkUrl, textLink);
-    
-//     linkArray.push(link2);
-    
-  
-//   }
-  
-//   console.log(linkArray);
-// });
-
-
-
-// class LinksFromMd {
-//   constructor(link, text) {
-//     this.href = link;
-//     this.text = text;
-//   }
-// }
-// module.exports.fs = fs;
-
-/* El ejercicio pide un string como input y no un file, adiconalemnete si un usuario baja el paquete, no va apoder pasarle parametros
- ta que solo queda disponiblñe ára ser usado con el file especificado ya que esta 
- cableado, y para cambiarlo tendrian que editar nuestro paquete, por eso lo cambiamos
- a una funcion que puede recibir lo que sea y ser usado sin necesidad de tocar nuestro codigo
-fuente
-*/
-
 class Link { // usando la clase sirve pues al final Link es un objeto igual
-  constructor(link, text) {
+  constructor(link, text) {// se crea constructor de la clase que recibe parametros 
     this.href = link;
     this.text = text;
   }
@@ -57,18 +17,18 @@ module.exports = {
     while ((myArray = newRegex.exec(paragraph)) !== null) { // exec retorna los grupos de la regex
       const text = myArray[2]; // este grupo tiene el texto (grupo 2)
       const href = myArray[3]; // este grupo tiene el link (grupo 3)
-      const link = new Link(href,text); // usando la clase de Links para almacenar en el array
+      const link = new Link(href, text); // usando la clase de Links para almacenar en el array
       // O podemos crear el objeto directamente como aqui abajo
       // resultArray.push({ href: href, text: text }); // { href, text } ES6 
       resultArray.push(link);
     }
     console.log(resultArray); // solo para porpositos de debug, podemos quitarlo
     // ya que no estoy usando el debuger de vscode, para correrlo hice un archivo
-    // llamado hola.js y lo puedo ejecutar con: node src/hola.js
-    // si quiero ejecutar archivos node puedo hacerlo asi y siu no especifico un archivo
+    // llamado extraclinks.js y lo puedo ejecutar con: node src/extraclinks.js
+    // si quiero ejecutar archivos node puedo hacerlo asi y si no especifico un archivo
     // puedio entrar al prompt de node solo tipeando: node y alli puedo escribir codigo node normal
-    // es decir , puedo hacer cosas como: const a = require('src/app.js'); const b = 1 +2; etc
-    // el archivo hola es porque no quiero estar tipeando la prueba a cada rato (antes de llamar al npm test no tenia como probar)
+    // es decir, puedo hacer cosas como: const a = require('src/app.js'); const b = 1 +2; etc
+    // el archivo extraclinks.js es porque no quiero estar tipeando la prueba a cada rato (antes de llamar al npm test no tenia como probar)
     return resultArray;
   }
 };
