@@ -1,6 +1,6 @@
 # libraryToFindLinks
 
-Evelexis is a library that facilitates the extraction of links from a paragraph, to facilitate the search of links of any web page.
+Evelexis is a library that facilitates the extraction of links from a paragraph, to facilitate the search of links of any web page with format Markdown.
 
 ### Features
 
