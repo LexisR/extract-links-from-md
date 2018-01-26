@@ -20,5 +20,10 @@ describe("extractLinksFromMd()", function () {
       { href: 'http://foo.com', text: 'foo' },
     ]);
   });
+<<<<<<< HEAD
+});
+
+=======
 
 });
+>>>>>>> upstream/evelexis
