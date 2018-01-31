@@ -7,9 +7,6 @@ Evelexis is a library that facilitates the extraction of links from a paragraph,
 []Free of dependency
 []Extract likns from any website
 
-### Documentation 
-
-in progress...
 
 ### Case of use 
 
