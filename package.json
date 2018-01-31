@@ -1,6 +1,6 @@
 {
   "name": "extract-link-evelexis",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extract Links from Markdown using Regexs for Laboratoria bootcamp",
   "main": "index.js",
   "directories": {
