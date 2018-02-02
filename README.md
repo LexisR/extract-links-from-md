@@ -58,7 +58,6 @@ Create a library that allows the pages of the universities to extract the links 
 ### Development
 
 `$ npm install evelexis`
-`$ npm test`
 
 ```javascript
 const app = require('./app.js');
